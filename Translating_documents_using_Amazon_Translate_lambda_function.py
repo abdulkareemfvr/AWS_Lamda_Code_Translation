@@ -1,6 +1,8 @@
 import json
 import boto3
 
+#Translating the document from Input S3 Bucket and Save into Output S3 Bucket by using AWS Translation Service
+
 s3_client = boto3.client(service_name='s3')
 translate = boto3.client('translate')
 
