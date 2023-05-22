@@ -1,8 +1,7 @@
 import boto3
 import json
 
-#Translate the Text and Images from Input S3 Bucket and store in to Output S3 Bucket by usin AWS Translation Service
-
+#Translate the Text and Images from Input S3 Bucket and store in to Output S3 Bucket by using AWS Translation Service
 s3_client = boto3.client('s3')
 rekognition_client = boto3.client('rekognition')
 translate_client = boto3.client('translate')
